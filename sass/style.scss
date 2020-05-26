@@ -1,0 +1,115 @@
+@import 'config';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $text-color;
+    font-weight: 400;
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+}
+.display-flex {
+    @extend %display--flex;
+}
+
+.display-reverse-flex {
+    @extend %display--flex;
+    flex-direction: row-reverse;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.header {
+    img {
+        max-width: 50%;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+        margin: 0;
+    }
+}
+
+.main {
+    width: 80%;
+    margin: 5rem auto;
+    
+    .data-summary {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        
+        img {
+            position: absolute;
+            // top: 1%;
+            width: 30px;
+        }
+        
+        h1 {
+            font-size: 5rem;
+            padding-top: 0;
+            padding: 0;
+        }
+        .light-color {
+            color: lighten($color: black, $amount: 60%);
+        }
+    }
+}
+.intro-par {
+    width: 50%;
+    margin: 0 auto;
+}
+.denge {
+    background-image: url('../images/bg-footer-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    padding: 0;
+    margin-bottom: -3rem;
+    height: 160px;
+}
+.footer {
+    color: white;
+    background-color: $text-color;
+    padding: 2rem 3rem 1rem;
+    margin: 0;
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+        .text {
+            width: 60%;
+        }
+        .address {
+            line-height: 1.9;
+            flex: 4;
+
+            .social-contianer {
+                display: flex;
+                justify-content: space-between;
+            }
+            img {
+                max-width: 50%;
+            }
+        }
+        .newsletter {
+            flex: 4;
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+@import 'buttons';
+@import 'utilities';
+@import 'mobile';

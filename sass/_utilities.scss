@@ -1,0 +1,37 @@
+.container {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+
+.brl-only {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.brr-only {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.br-all {
+    border-radius: 5px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.full-image {
+    max-width: 80%;
+}
+.illus-image {
+    max-width: 50%;
+}
+button {
+    border: 1px solid lighten(hsl(237, 63%, 64%), 10%);
+}
+ul {
+    list-style: none;
+}
