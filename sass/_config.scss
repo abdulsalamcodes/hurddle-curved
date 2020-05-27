@@ -2,7 +2,7 @@ $primary-color: hsl(322, 100%, 66%);
 $text-color: hsl(192, 100%, 9%);
 $light-pale-Blue: hsl(207, 100%, 98%);
 
-$spaceamounts: (0,1,2,3,4,5);
+$spaceamounts: (0,1,2,3,4,5,6,7);
 @each $space in $spaceamounts {
     .m-#{$space} {
         margin: #{$space}rem;
@@ -50,7 +50,7 @@ $spaceamounts: (0,1,2,3,4,5);
 .align-center {
     text-align: center;
     width: 90%;
-    margin: 3rem auto;
+    margin: 7rem auto;
 }
 .input-text {
     padding: .75rem 1rem;
