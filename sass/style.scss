@@ -7,6 +7,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     color: $text-color;
+// background-color: red;
     font-weight: 400;
     h1,h2,h3,h4,h5,h6 {
         font-family: 'Poppins', sans-serif;
@@ -45,7 +46,16 @@ body {
 .main {
     width: 80%;
     margin: 0 auto;
-    
+    .first {
+        background: padding-box url('../images/bg-section-top-desktop-1.svg') top / 100% 50% no-repeat , url('../images/bg-section-bottom-desktop-1.svg') bottom / 100% 50% no-repeat;
+        // background-position: bottom top;
+    }
+    .third {
+        background: top url('../images/bg-section-top-desktop-2.svg') no-repeat, bottom url('../images/bg-section-bottom-desktop-2.svg') no-repeat;
+        background-size: 100% 50%;
+        padding: 0;
+        background-position: top bottom;
+    }
     .data-summary {
         position: relative;
         width: 60%;

@@ -12,7 +12,16 @@
         .pr-2, .pl-2 {
             padding: 2rem 0;
         }
-
+        .first {
+            background: padding-box url('../images/bg-section-top-mobile-1.svg') top / 100% 50% no-repeat , url('../images/bg-section-bottom-mobile-1.svg') bottom / 100% 50% no-repeat;
+            // background-position: bottom top;
+        }
+        .third {
+            background: top url('../images/bg-section-top-mobile-2.svg') no-repeat, bottom url('../images/bg-section-bottom-mobile-2.svg') no-repeat;
+            background-size: 100% 50%;
+            padding: 0;
+            background-position: top bottom;
+        }
         .data-summary {
             div {
                 padding-bottom: 5rem;
